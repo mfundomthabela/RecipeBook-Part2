@@ -1,0 +1,31 @@
+
+
+
+    private void btnAlphabetical_Order_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            MessageBoxResult alpha = MessageBox.Show("Confirmation!", "Display", MessageBoxButton.OK);
+            //Rec_Name = new ObservableCollection<string>()
+            //{
+            ////    "Apple",
+            ////    "Orange",
+            ////    "Banana",
+            ////    "Mango"
+            //};
+
+            // Sort the collection
+            List<string> sortedList = Rec_Name.ToList();
+            sortedList.Sort();
+
+            // Display the sorted items using MessageBox
+            foreach (string item in sortedList)
+            {
+                MessageBox.Show(item);
+            }
+
+
+            //alRec_Namesphabet = new ObservableCollection<string>(Rec_Name.OrderBy(item => item));
+
+
+        }
